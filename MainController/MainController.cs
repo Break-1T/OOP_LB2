@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainController._2_nd_lb_classes;
+using System;
 
 namespace MainController
 {
@@ -6,22 +7,37 @@ namespace MainController
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("------------------------------");
+
             Adress MyAdress = new Adress(93105,"Ukraine","Lisichansk","Kommunalnaya",35,25);
             MyAdress.ShowInfo();
+
             Console.WriteLine("------------------------------");
+
             Rectangle MyRectangle = new Rectangle(3488.466, 15.12);
+
             Console.WriteLine($"Perimeter: {MyRectangle.Perimeter}");
             Console.WriteLine($"Area: {MyRectangle.Area}");
+
             Console.WriteLine("------------------------------");
+
             Book MyBook = new Book("MyBook");
-            MyBook.Show();
             Title MyTitle = new Title("MyTitle");
-            MyTitle.Show();
             Author MyAuthor = new Author("MyAuthor");
-            MyAuthor.Show();
             Content MyContent = new Content("MyContent");
+
+            MyBook.Show();
+            MyTitle.Show();
+            MyAuthor.Show();
             MyContent.Show();
+
             Console.WriteLine("------------------------------");
+
+            User MyUser = new User("User1234","Taras","Sergeevich",18);
+            MyUser.ShowInfo();
+
+            Console.WriteLine("------------------------------");
+
         }
     }
 }

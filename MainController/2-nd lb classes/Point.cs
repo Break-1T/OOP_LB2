@@ -1,18 +1,19 @@
 ﻿using System;
+//Ещё не доделал, т.к. не могу понять условие.
 
 namespace MainController._2_nd_lb_classes
 {
     class Point
     {
-        public int side1;
-        public int side2;
+        public double side1;
+        public double side2;
         public string Name;
 
-        public int side3 { get; }
-        public int side4 { get; }
-        public int side5 { get; }
+        public double side3 { get; }
+        public double side4 { get; }
+        public double side5 { get; }
 
-        public Point(string Name, int side1, int side2, int side3=0, int side4=0, int side5=0)
+        public Point(string Name, double side1=0, double side2=0, double side3=0, double side4=0, double side5=0)
         {
             this.side1 = side1;
             this.side2 = side2;
