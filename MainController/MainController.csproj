@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="2-nd lb classes\Adress.cs" />
+    <Compile Include="2-nd lb classes\Point.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="2-nd lb classes\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

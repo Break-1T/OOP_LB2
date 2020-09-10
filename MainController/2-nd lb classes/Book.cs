@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MainController
 {
@@ -13,7 +9,7 @@ namespace MainController
         {
             this.Name = Name;
         }
-        public void Show()
+        public virtual void Show()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"Book:  {Name}");
@@ -22,10 +18,8 @@ namespace MainController
     }
     class Title : Book
     {
-        public Title(string Name) : base(Name)
-        {
-        }
-        public void Show()
+        public Title(string Name) : base(Name) { }
+        public override void Show()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine($"Title: {Name}");
@@ -34,10 +28,8 @@ namespace MainController
     }
     class Author : Book
     {
-        public Author(string Name) : base(Name)
-        {
-        }
-        public void Show()
+        public Author(string Name) : base(Name) { }
+        public override void Show()
         {
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine($"Author: {Name}");
@@ -46,10 +38,8 @@ namespace MainController
     }
     class Content : Book
     {
-        public Content(string Name) : base(Name)
-        {
-        }
-        public void Show()
+        public Content(string Name) : base(Name) { }
+        public override void Show()
         {
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine($"Content: {Name}");

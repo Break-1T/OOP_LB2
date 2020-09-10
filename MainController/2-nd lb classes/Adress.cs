@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MainController
 {
-        class Adress
-        {
-            public Adress(int index, string country, string city, string street, int house, int apartament)
+    class Adress
+    {
+        public Adress(int index, string country, string city, string street, int house, int apartament)
             {
                 this.index = index;
                 this.country = country;
@@ -17,13 +13,15 @@ namespace MainController
                 this.house = house;
                 this.apartament = apartament;
             }
-            public int index { get; set; }
-            public string country { get; set; }
-            public string city { get; set; }
-            public string street { get; set; }
-            public int house { get; set; }
-            public int apartament { get; set; }
-            public void ShowInfo()
+            
+        public int index { get; set; }
+        public string country { get; set; }
+        public string city { get; set; }
+        public string street { get; set; }
+        public int house { get; set; }
+        public int apartament { get; set; }
+
+        public void ShowInfo()
             {
                 Console.WriteLine($"Index: {index}");
 
@@ -37,6 +35,6 @@ namespace MainController
 
                 Console.WriteLine($"Apartament: {apartament}");
             }
-        }
     }
+}
 

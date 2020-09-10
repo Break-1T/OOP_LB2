@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MainController
 {
@@ -17,8 +13,23 @@ namespace MainController
         }
         public double AreaCalculator() => side1 * side2;
         public double PerimeterCalculator() => 2*(side1 + side2);
-        public double Area { get; private set; }
-        public double Perimeter { get; private set; }
         
+        public double Area
+        {
+            get
+            {
+                return AreaCalculator();
+            }
+            private set { }
+        }
+
+        public double Perimeter
+        {
+            get
+            {
+                return PerimeterCalculator();
+            }
+            private set { }
+        }
     }
 }

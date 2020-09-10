@@ -1,33 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MainController._2_nd_lb_classes
 {
     class Point
     {
-        public int field1;
-        public int field2;
-        public string field3;
+        public int side1;
+        public int side2;
+        public string Name;
 
-        public string property1 { get; }
-        public string property2 { get; }
-        public string property3 { get; }
-        public Point(int field1=0, int field2=0, string field3="Null")
+        public int side3 { get; }
+        public int side4 { get; }
+        public int side5 { get; }
+
+        public Point(string Name, int side1, int side2, int side3=0, int side4=0, int side5=0)
         {
-            this.field1 = field1;
-            this.field2 = field2;
-            this.field3 = field3;
+            this.side1 = side1;
+            this.side2 = side2;
+            this.side3 = side3;
+            this.side4 = side4;
+            this.side5 = side5;
+            this.Name = Name;
         }
-        
     }
     class Figure
     {
         public Figure(Point A,Point B,Point C)
         {
 
+        }
+        public Figure(Point A, Point B, Point C,Point D)
+        {
+
+        }
+        public Figure(Point A, Point B, Point C,Point D,Point E)
+        {
+
+        }
+
+        public double LengthSide(Point A,Point B)//Длина стороны многоугольника
+        {
+            return 0;
+        }
+        public void PerimetrCalculator()//Периметр многоугольника
+        {
+            Console.WriteLine($"Perimeter of ");
         }
     }
 }
