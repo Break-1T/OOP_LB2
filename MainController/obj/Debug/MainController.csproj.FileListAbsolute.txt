@@ -1,0 +1,6 @@
+D:\c#\MainController\MainController\bin\Debug\MainController.exe.config
+D:\c#\MainController\MainController\bin\Debug\MainController.exe
+D:\c#\MainController\MainController\bin\Debug\MainController.pdb
+D:\c#\MainController\MainController\obj\Debug\MainController.csprojResolveAssemblyReference.cache
+D:\c#\MainController\MainController\obj\Debug\MainController.exe
+D:\c#\MainController\MainController\obj\Debug\MainController.pdb
