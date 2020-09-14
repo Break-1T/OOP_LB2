@@ -21,15 +21,12 @@ namespace MainController
 
             Console.WriteLine("------------------------------");
 
-            Book MyBook = new Book("MyBook");
-            Title MyTitle = new Title("MyTitle");
-            Author MyAuthor = new Author("MyAuthor");
-            Content MyContent = new Content("MyContent");
+            Book MyBook = new Book(
+                new Title("Полное руководство по C# 4.0"),
+                new Author("Герберт Шилдт"),
+                new Content("Руководство по программированию"));
 
             MyBook.Show();
-            MyTitle.Show();
-            MyAuthor.Show();
-            MyContent.Show();
 
             Console.WriteLine("------------------------------");
 
