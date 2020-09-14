@@ -34,7 +34,11 @@ namespace MainController
             MyUser.ShowInfo();
             #endregion
             Console.WriteLine(new string('-', 30));
-
+            #region 6-е Задание
+            Converter converter = new Converter(10,10,10,28);
+            converter.ValueConverter();
+            #endregion
+            Console.WriteLine(new string('-', 30));
         }
     }
 }
