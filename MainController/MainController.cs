@@ -7,33 +7,33 @@ namespace MainController
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("------------------------------");
-
+            Console.WriteLine(new string('-',30));
+            #region 1-е Задание
             Adress MyAdress = new Adress(93105,"Ukraine","Lisichansk","Kommunalnaya",35,25);
             MyAdress.ShowInfo();
-
-            Console.WriteLine("------------------------------");
-
+            #endregion
+            Console.WriteLine(new string('-', 30));
+            #region 2-е Задание
             Rectangle MyRectangle = new Rectangle(3488.466, 15.12);
 
             Console.WriteLine($"Perimeter: {MyRectangle.Perimeter}");
             Console.WriteLine($"Area: {MyRectangle.Area}");
-
-            Console.WriteLine("------------------------------");
-
+            #endregion
+            Console.WriteLine(new string('-', 30));
+            #region 3-е Задание
             Book MyBook = new Book(
                 new Title("Полное руководство по C# 4.0"),
                 new Author("Герберт Шилдт"),
                 new Content("Руководство по программированию"));
 
             MyBook.Show();
-
-            Console.WriteLine("------------------------------");
-
+            #endregion
+            Console.WriteLine(new string('-', 30));
+            #region 5-е Задание
             User MyUser = new User("User1234","Taras","Sergeevich",18);
             MyUser.ShowInfo();
-
-            Console.WriteLine("------------------------------");
+            #endregion
+            Console.WriteLine(new string('-', 30));
 
         }
     }
