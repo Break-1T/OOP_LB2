@@ -30,13 +30,22 @@ namespace MainController
             #endregion
             Console.WriteLine(new string('-', 30));
             #region 5-е Задание
-            User MyUser = new User("User1234","Taras","Sergeevich",18);
+            User MyUser = new User("User1234","Taras","Sergeevich",18,"15.09.2020");
             MyUser.ShowInfo();
             #endregion
             Console.WriteLine(new string('-', 30));
             #region 6-е Задание
             Converter converter = new Converter(10,10,10,28);
             converter.ValueConverter();
+            #endregion
+            Console.WriteLine(new string('-', 30));
+            #region 7-е Задание
+            Employee employee = new Employee("Иван", "Степанин");
+            employee.GetInfo();
+            #endregion
+            Console.WriteLine(new string('-', 30));
+            #region 8-е Задание
+
             #endregion
             Console.WriteLine(new string('-', 30));
         }
