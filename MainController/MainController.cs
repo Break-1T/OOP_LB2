@@ -45,7 +45,7 @@ namespace MainController
             #endregion
             Console.WriteLine(new string('-', 30));
             #region 8-е Задание
-
+            Invoice invoice = new Invoice(16847, "Taras", "IBM");
             #endregion
             Console.WriteLine(new string('-', 30));
         }
