@@ -47,7 +47,8 @@
     <Compile Include="2-nd lb classes\Converter.cs" />
     <Compile Include="2-nd lb classes\Employee.cs" />
     <Compile Include="2-nd lb classes\Invoice.cs" />
-    <Compile Include="2-nd lb classes\Point.cs" />
+    <Compile Include="2-nd lb classes\Point_and_Figure\Figure.cs" />
+    <Compile Include="2-nd lb classes\Point_and_Figure\Point.cs" />
     <Compile Include="2-nd lb classes\User.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="2-nd lb classes\Book.cs" />
